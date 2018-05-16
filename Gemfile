@@ -15,6 +15,8 @@ gem 'figaro'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'pry'
+  gem 'shoulda-matchers'
 end
 
 group :development do
