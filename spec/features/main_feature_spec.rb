@@ -25,7 +25,7 @@ describe 'a user visits the root' do
       end
 
       it 'should show station attributes' do
-        within '.station' do
+        page.all('.station') do
           expect(page).to have_content('Name')
           expect(page).to have_content('Address')
           expect(page).to have_content('Fuel Types')
