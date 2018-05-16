@@ -7,11 +7,11 @@ class StationCallerService < MasterService
 
   def stations
     body = JSON.parse(raw_response(@url), symbolize_names: true)
-    serialize(body)
+    new_stations(body)
   end
 
-  def serialize(stns)
-    stns[:fuel_stations].map do |attrs|
+  def new_stations(json)
+    json[:fuel_stations].map do |attrs|
       Station.new(attrs)
     end
   end
