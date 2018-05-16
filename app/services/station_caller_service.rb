@@ -5,6 +5,8 @@ class StationCallerService < MasterService
   end
 
   def stations
-    binding.pry
+    conn.get do |req|
+      req.url '/api/alt-fuel-stations/v1/nearest'
+    end
   end
 end

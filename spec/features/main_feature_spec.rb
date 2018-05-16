@@ -5,9 +5,11 @@ describe 'a user visits the root' do
     context 'clicks on Locate' do
 
       before(:each) do
-        visit root_path
-        fill_in 'q', with: '80203'
-        click_on 'Locate'
+        VCR.use_cassette('stations') do
+          visit root_path
+          fill_in 'q', with: '80203'
+          click_on 'Locate'
+        end
       end
 
       it 'should be on /search' do
