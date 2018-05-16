@@ -5,6 +5,7 @@ class StationFinder
 
   def stations
     caller = StationCallerService.new(@zip)
-    caller.stations.first
+    caller.stations
+    binding.pry
   end
 end
