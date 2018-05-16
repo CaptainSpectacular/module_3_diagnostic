@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Wed, 16 May 2018 16:56:41 GMT
+      - Wed, 16 May 2018 16:56:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '971'
+      - '969'
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
@@ -45,7 +45,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Wed, 16 May 2018 16:56:41 GMT
+      - Wed, 16 May 2018 16:56:42 GMT
       Strict-Transport-Security:
       - max-age=31536000; preload
       - max-age=31536000; preload
@@ -54,9 +54,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - '06187cc8-d6e5-42de-aa32-205110682f47'
+      - ffe386a8-81f7-46c1-8190-0e352baf212d
       X-Runtime:
-      - '0.013379'
+      - '0.011468'
       X-Xss-Protection:
       - 1; mode=block
       Age:
@@ -148,7 +148,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '970'
+      - '968'
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
@@ -167,9 +167,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - b99b5989-016a-4373-aa5c-8981d4d84b73
+      - 47e23511-4a0b-4c3e-a9b2-1fb62447b117
       X-Runtime:
-      - '0.010913'
+      - '0.010386'
       X-Xss-Protection:
       - 1; mode=block
       Age:
@@ -225,5 +225,5 @@ http_interactions:
         Elati St","zip":"80204","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
         Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_is_retail":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:413611"]},"distance":0.76279,"distance_km":1.22759}]}'
     http_version: 
-  recorded_at: Wed, 16 May 2018 16:56:08 GMT
+  recorded_at: Wed, 16 May 2018 16:56:09 GMT
 recorded_with: VCR 4.0.0
