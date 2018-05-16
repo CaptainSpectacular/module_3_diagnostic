@@ -6,7 +6,7 @@ class StationCallerService < MasterService
 
   def stations
     conn.get do |req|
-      req.url '/api/alt-fuel-stations/v1/nearest'
+      req.url "/api/alt-fuel-stations/v1/nearest?location=#{@zip}&api_key=#{ENV['API_SECRET']}"
     end
   end
 end
