@@ -10,6 +10,12 @@ class StationCallerService < MasterService
       req.url @url
     end.body
 
-    JSON.parse(body)
+    serialize(JSON.parse(body, symbolize_names: true))
+  end
+
+  def serialize(stns)
+    stns[:fuel_stations].map do |attrs|
+      Station.new(attrs)
+    end
   end
 end
