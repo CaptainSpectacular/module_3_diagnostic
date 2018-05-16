@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-describe 'a user visits the root' do
+feature 'a user visits the root' do
   context 'and fill in form with 80203' do
     context 'clicks on Locate' do
 
-      before(:each) do
+      background do   
         VCR.use_cassette('stations') do
           visit root_path
           fill_in 'q', with: '80203'
