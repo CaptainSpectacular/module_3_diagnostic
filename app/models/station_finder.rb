@@ -4,7 +4,7 @@ class StationFinder
   end
 
   def stations
-    caller = StationCaller.new(@zip)
-    caller.station
+    caller = StationCallerService.new(@zip)
+    caller.stations
   end
 end
