@@ -6,7 +6,7 @@ describe 'a user visits the root' do
 
       before(:each) do
         visit root_path
-        fill_in 'search', with: '80203'
+        fill_in 'q', with: '80203'
         click_on 'Locate'
       end
 
