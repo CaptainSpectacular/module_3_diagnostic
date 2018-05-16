@@ -15,7 +15,7 @@ describe 'a user visits the root' do
       end
 
       it 'should see list of 10 closest stations within 6 miles sorted by distance' do
-        expect(page).to have_css('.stations', count: 10)
+        expect(page).to have_css('.station', count: 10)
       end
 
       it 'should filter by electric and propane stations' do
