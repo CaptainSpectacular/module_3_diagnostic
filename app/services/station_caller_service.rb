@@ -6,11 +6,8 @@ class StationCallerService < MasterService
   end
 
   def stations
-    body = conn.get do |req|
-      req.url @url
-    end.body
-
-    serialize(JSON.parse(body, symbolize_names: true))
+    body = JSON.parse(raw_response(@url), symbolize_names: true)
+    serialize(body)
   end
 
   def serialize(stns)
